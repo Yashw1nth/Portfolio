@@ -1,0 +1,162 @@
+.hero-container{
+    padding: 5.5rem 2rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.hero-container:after{
+    content: " ";
+    width: 9rem;
+    height: 9rem;
+    top: -3rem;
+    left: 5rem;
+    border-radius: 5rem;
+    background: #4a389b;
+    position: absolute;
+    z-index: -1;
+    filter: blur(110px);
+}
+
+.hero-container::before{
+    content: " ";
+    width: 26.125rem;
+    height: 26.125rem;
+    bottom: 2rem;
+    right: 0rem;
+    border-radius: 28.125rem;
+    background: #4a389b;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.hero-content{
+    margin-left: 2rem;
+}
+
+.hero-content h3{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500; 
+}
+
+.text{
+    color: #a993fe;
+    margin-right: 0.8rem;   
+}
+
+
+.hero-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero-content p{
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.hero-content button{
+    font-size: 13px;
+    padding: 0.8rem 2rem;
+    background: #7f69d6;
+    border-radius: 4rem;
+    color: #fff;
+    margin: 3rem 0px 0px 5rem;
+    cursor: pointer;
+    border: 0.1px solid #48388a;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content button:hover{
+    color: #a993fe; 
+    border: 1.4px solid;
+}
+
+.hero-content button::after{
+    content: '';
+    width: 0;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #191442;
+    transition: 0.7s ease;
+    z-index: -1;
+    border-radius: 4rem;  
+}
+
+.hero-content button:hover:after{
+    width: 151.7px;
+    border-radius: 4rem;
+}
+
+.hero-img > div > img{
+    margin-left: 14rem;
+    width: 14rem;
+    height: auto;
+    border-radius: 3rem;
+    animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 0 1.4rem #a993fe;
+}
+
+.color{
+    color: #a993fe;
+    margin-left: 10px;
+ }
+
+ .tech{
+    display: flex;
+    margin: 1.5rem 0 0 1.8rem;
+ }
+
+ .tech-icon{
+    border: 1.4px solid  #7f69d6;
+    border-radius: 2rem 2rem;
+    display: flex;
+    margin-left: 1.2rem;
+ }
+
+ .tech-icon:hover{
+    box-shadow: 0 0 0.4rem #a993fe;
+ }
+
+ .tech-icon img{
+    width: 36px;
+    height: auto;
+    padding: 6px 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .tech-icon img:hover{
+    transform: translateY(-0.15rem);
+ }
+
+
+ 
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+

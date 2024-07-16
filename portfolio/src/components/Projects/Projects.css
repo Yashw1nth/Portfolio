@@ -1,0 +1,106 @@
+.projects-container{
+    margin: 4rem;
+    position: relative;
+}
+
+.projects-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-content{
+    position: relative;
+    border-radius: 0.5rem;
+    width: 25%;
+}
+
+.projects-content::before{
+    content: " ";
+    width: 20.125rem;
+    height: 20.125rem;
+    border-radius: 28.125rem;
+    background: #4a389b;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+
+.image{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem #a993fe;
+    border: 1.5px solid #a993fe;
+    display: block;
+    width: 100%;
+    height: auto;
+    filter:saturate(80%);
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c082e;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: .5s ease;  
+}
+
+.projects-content:hover .overlay{
+    height: 100%;
+    border: 1.3px solid #a993fe;
+}
+
+.projects-content h1{
+    font-family: 'Battlesbridge';
+    width: 100%;
+    margin-top: 10%;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+}
+
+.projects-content h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin: 45% 0 0 18%;
+    width: 70%;
+    line-height: 1.5em;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c082e;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 0.5rem;
+    transition: .5s ease;  
+}
+
+.projects-content:hover .overlay1{
+    height: 100%;
+    border: 1.3px solid #a993fe;
+}
+
+
+
+
+
+
+
+
+
